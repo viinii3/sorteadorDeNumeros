@@ -1,0 +1,67 @@
+@fontPrincipal: Roboto, sans-serif;
+@fontTitulo: Lobster, cursive;
+@corDoTexto: white;
+@corDeFundo: rgb(221, 57, 125);
+@corButton: rgb(184, 41, 101);
+@corButtonHover: rgb(170, 48, 99);
+
+body{
+    background-color: @corDeFundo;
+    font-family: @fontPrincipal;
+    color: @corDoTexto;
+}
+
+h1{
+    font-family: @fontTitulo;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: @corButton;
+    font-family: @fontPrincipal;
+}
+
+button:hover{
+    background-color: @corButtonHover;
+}
+
+input{
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    border-bottom: solid 2px white;
+}
+
+.resultado{
+    padding: 16px;
+    margin: 120px;
+    border: 8px dotted white;
+    text-align: center;
+    display: none;
+
+    span{
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+        padding-top: 8px;
+    }
+}
